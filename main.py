@@ -1,3 +1,7 @@
+
+# Part of case-study #2: Cost of goods, income and revenue
+# Developers: Aliev Timur, Shostenko Artyom
+
 import ru_local as ru
 
 
