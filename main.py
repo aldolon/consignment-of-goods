@@ -56,11 +56,13 @@ def display_report(products):
         revenue_all_products += product['total_revenue']
         income_all_products += product['total_income']
         print(
-            f"{product['name']} - {ru.QUANTITY}: {product['quantity']}, {ru.COST_OF_ONE_ITEM}: {product['price']:.2f}, "
+            f"{product['name']} - {ru.QUANTITY}: {product['quantity']}, "
+            f"{ru.COST_OF_ONE_ITEM}: {product['price']:.2f}, "
             f"{ru.TOTAL_PRODUCT_REVENUE}: {product['total_revenue']:.2f}\n"
             f"{ru.EXPENSES_ON_ONE_ITEM}: {product['item_expenses']:.2f}, "
             f"{ru.TOTAL_EXPENSES_ON_THE_PRODUCT}: {product['total_expenses']:.2f}\n"
-            f"{ru.INCOME_FROM_ITEM}: {product['income']:.2f}, {ru.TOTAL_PRODUCT_INCOME}: {product['total_income']:.2f}\n"
+            f"{ru.INCOME_FROM_ITEM}: {product['income']:.2f}, "
+            f"{ru.TOTAL_PRODUCT_INCOME}: {product['total_income']:.2f}\n"
         )
 
     print(f"\n{ru.TOTAL_REVENUE}: {revenue_all_products:.2f}")
